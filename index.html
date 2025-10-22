@@ -9,46 +9,241 @@
   <meta property="og:description" content="Spedizione compresa. Guarda video, foto e ordina in un clic." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/titolo.jpg" />
+  <meta property="og:url" content="" />
   <link rel="icon" href="assets/favicon.png" />
   <style>
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0f14;color:#e9f1fb}
+    :root{--bg:#0b0f14;--card:#111822;--muted:#5f748f;--accent:#13b0ff;--text:#e9f1fb}
+    *{box-sizing:border-box} body{margin:0;background:linear-gradient(160deg,#0b0f14,#0e141c 40%,#0b0f14);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,'Helvetica Neue',Arial,sans-serif}
     a{color:inherit;text-decoration:none}
-    .container{max-width:1150px;margin:auto;padding:20px}
-    header{background:#0b0f14cc;border-bottom:1px solid #1a2736;padding:10px 0;text-align:center;position:sticky;top:0;z-index:100}
-    .btn{padding:12px 16px;border-radius:12px;border:none;cursor:pointer;font-weight:bold}
-    .buy{background:linear-gradient(135deg,#22c55e,#86efac);color:#03140a;}
-    .section{margin:30px 0}
-    .card{background:#111822;border:1px solid #1a2838;border-radius:20px;padding:20px}
-    footer{text-align:center;color:#7b92ac;font-size:13px;margin:40px 0 10px}
+    .container{max-width:1150px;margin:0 auto;padding:20px}
+    header{position:sticky;top:0;backdrop-filter:saturate(1.4) blur(8px);background:#0b0f14cc;border-bottom:1px solid #1a2736;z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:10px;align-items:center}
+    .brand img{width:40px;height:40px;border-radius:10px}
+    .brand h1{font-size:18px;margin:0;font-weight:700;letter-spacing:.2px}
+    .btn{padding:12px 16px;border-radius:12px;border:1px solid #1b2b3d;background:#13202f;cursor:pointer;font-weight:600}
+    .btn.primary{background:linear-gradient(135deg,#0ea5e9,#22d3ee);color:#04121d;border:none}
+    .btn.buy{background:linear-gradient(135deg,#22c55e,#86efac);color:#03140a;border:none}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:28px 0}
+    .price{display:flex;gap:12px;align-items:baseline}
+    .price .now{font-size:40px;font-weight:900}
+    .badge{display:inline-block;background:#122536;border:1px solid #21405c;color:#8cc5ff;padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
+    .card{background:linear-gradient(180deg,#0f1722,#0c121a);border:1px solid #1a2838;border-radius:20px;box-shadow:0 10px 40px #0008}
+    .card.pad{padding:18px}
+    .gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:12px}
+    .gallery img{width:100%;height:110px;object-fit:cover;border-radius:12px;border:1px solid #1a2736}
+    .cover{width:100%;border-radius:18px;border:1px solid #1a2838}
+    h2{margin:16px 0 8px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feat{padding:14px;border:1px solid #1a2838;border-radius:16px;background:#0e1621}
+    .section{margin:26px 0}
+    iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:18px}
+    footer{margin:40px 0 10px;text-align:center;color:#7b92ac;font-size:13px}
+    .policy{font-size:14px;color:#9fb1c8;line-height:1.6}
+    .pill-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .pill{background:#0f1d2a;border:1px solid #203040;color:#9fc7ff;padding:6px 10px;border-radius:999px;font-size:12px}
+    .inp{width:100%;padding:12px 14px;border-radius:12px;border:1px solid #1a2838;background:#0f1722;color:#e9f1fb}
+    details{border:1px solid #1a2838;border-radius:12px;padding:12px 14px;margin:10px 0;background:#0f1622} summary{cursor:pointer;font-weight:600}
+    @media(max-width:980px){.hero{grid-template-columns:1fr}.features{grid-template-columns:1fr 1fr}.grid-2{grid-template-columns:1fr}}
+    @media(max-width:640px){.features{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(3,1fr)}}
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Drone GPS 180",
+    "image": ["assets/titolo.jpg","assets/2f5540f1.jpg","assets/74fee8a3.jpg","assets/2513a2e2.jpg"],
+    "description": "Drone GPS 180 con videocamera 4K, evitamento ostacoli, ritorno automatico e 23 minuti di autonomia. Offerta speciale: 199€ spedizione compresa.",
+    "brand": {"@type":"Brand","name":"John Tech"},
+    "sku": "GPS180",
+    "offers": {"@type":"Offer","url":"","priceCurrency":"EUR","price":"199","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition"}
+  }
+  </script>
 </head>
 <body>
   <header>
-    <h1>Drone GPS 180 – Offerta Speciale 199€</h1>
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/johntech-logo.png" alt="John Tech"/>
+        <h1>Drone GPS 180</h1>
+      </div>
+      <div class="cta">
+        <a class="btn" href="#video">Guarda il video</a>
+        <a class="btn buy" href="#ordina">Ordina ora – 199€</a>
+      </div>
+    </div>
   </header>
 
   <main class="container">
-    <section class="section card">
-      <h2>Ordina ora – 199€</h2>
-      <p>Puoi acquistare direttamente online in modo sicuro con PayPal o carta di credito (non serve avere un account PayPal).</p>
-      <div style="margin-top:15px">
-        <a class="btn buy" href="https://wa.me/393514381099" target="_blank">Ordina su WhatsApp</a>
+    <section class="hero">
+      <div>
+        <span class="badge">Offerta speciale • Spedizione compresa</span>
+        <h2 style="font-size:32px;margin:10px 0 6px">Drone GPS 180</h2>
+        <p style="color:#b9c9dd;line-height:1.65">Il <strong>Drone GPS 180</strong> è il compagno ideale per iniziare a filmare dall’alto con facilità e sicurezza. Grazie a <strong>GPS/GLONASS</strong>, evitamento ostacoli e funzioni intelligenti (Ritorno a Casa, Follow‑Me, Waypoint), ottieni riprese stabili e rientro automatico.</p>
+        <div class="price">
+          <div class="now">199€</div>
+          <div>
+            <div class="badge" style="background:#10261a;border-color:#1b5a31;color:#9ff1bf">spedizione compresa</div>
+            <div class="ship" style="font-size:13px;color:#8da2bb">Disponibile • consegna 24‑72h</div>
+          </div>
+        </div>
+        <div class="pill-list">
+          <span class="pill">Video 4K</span>
+          <span class="pill">Evitamento ostacoli</span>
+          <span class="pill">GPS + RTH</span>
+          <span class="pill">Follow‑Me</span>
+          <span class="pill">2 Batterie (fino a 46′)</span>
+          <span class="pill">Pieghevole</span>
+        </div>
       </div>
-      <div style="margin-top:25px">
-        <a href="https://www.paypal.me/bellahorny75/199?currency=EUR" target="_blank"> 
-          <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" 
-               alt="Paga ora con PayPal" style="height:60px;border:none;">
-        </a>
+      <div>
+        <img class="cover card" src="assets/titolo.jpg" alt="Drone GPS 180 – copertina"/>
+        <div class="gallery">
+          <img src="assets/2f5540f1.jpg" alt="Contenuto confezione"/>
+          <img src="assets/74fee8a3.jpg" alt="Volo circolare"/>
+          <img src="assets/2513a2e2.jpg" alt="Evitamento ostacoli"/>
+          <img src="assets/a5319de5.jpg" alt="Ritorno Intelligente"/>
+          <img src="assets/bdbc8ced.jpg" alt="Radiocomando con schermo"/>
+          <img src="assets/be3ae989.jpg" alt="F180 GPS specifiche"/>
+        </div>
       </div>
     </section>
-  </main>
 
-  <footer>
-    <p>© <span id="year"></span> John Tech • Offerta speciale 199€</p>
-  </footer>
+    <section id="video" class="section card pad">
+      <h2>Video dimostrativo</h2>
+      <iframe src="https://www.youtube.com/embed/gNcV0jNormc" title="Drone GPS 180 – Video" allowfullscreen></iframe>
+    </section>
+
+    <section class="section grid-2">
+      <div class="card pad">
+        <h2>Descrizione dettagliata</h2>
+        <p style="color:#b9c9dd;line-height:1.7">
+          Drone GPS con Fotocamera 4K, <strong>Evitamento Ostacoli Automatico</strong>, quadricottero pieghevole con obiettivo regolabile 90°, <strong>23 minuti di autonomia</strong> e <strong>schermo remoto da 4,5"</strong>. Perfetto per <em>principianti, bambini e adulti</em> grazie a decollo/atterraggio con un tasto e modalità guidate.
+        </p>
+        <h3 style="margin:10px 0 6px">Informazioni su questo articolo</h3>
+        <ul style="color:#c8daee;line-height:1.75">
+          <li><strong>Precisione GPS & Volo Stabile:</strong> posizionamento a flusso ottico + stabilità anti‑vento. Sensore ostacoli removibile e modalità headless.</li>
+          <li><strong>Avventure con GPS:</strong> Tap Fly (disegna percorsi), Seguimi e Punti di Interesse con tracking automatico.</li>
+          <li><strong>Telecamera 4K FPV Live:</strong> streaming 4K su schermo del telecomando 4,5" o via Wi‑Fi FPV. Lente regolabile 90° + scheda SD 4GB inclusa. Riprese fino a 120 m di altezza.</li>
+          <li><strong>23 Min Autonomia & Portabile:</strong> pieghevole e tascabile. Batteria 1600 mAh, portata 600 m telecomando/400 m Wi‑Fi. &lt;250 g.</li>
+          <li><strong>Controllo Intelligente:</strong> decollo/atterraggio a un tasto, traiettoria, flip 360°/3D e controllo gestuale; velocità regolabile.</li>
+        </ul>
+      </div>
+      <div class="card pad">
+        <h2>Specifiche tecniche</h2>
+        <table class="specs" style="width:100%;border-collapse:separate;border-spacing:0 8px">
+          <tr><td>Risoluzione video</td><td>fino a 4K (30 fps)</td></tr>
+          <tr><td>Stabilizzazione</td><td>EIS elettronica</td></tr>
+          <tr><td>Posizionamento</td><td>GPS/GLONASS + flusso ottico</td></tr>
+          <tr><td>Portata controllo</td><td>fino a 600 m (RC) • 400 m (Wi‑Fi)</td></tr>
+          <tr><td>Autonomia</td><td>fino a 23′ per batteria (stimata)</td></tr>
+          <tr><td>Peso</td><td>&lt; 250 g</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="section card pad">
+      <h2>Cosa include la confezione</h2>
+      <ul class="policy">
+        <li>1× Drone • 1× Telecommando • 1× Batteria • 4× Eliche • 1× Cacciavite • 1× Cavo USB</li>
+        <li>1× Custodia da trasporto • 1× Manuale di istruzioni</li>
+      </ul>
+    </section>
+
+    <section id="ordina" class="section grid-2">
+      <div class="card pad">
+        <h2>Ordina ora – 199€</h2>
+        <p class="policy">Compila i campi e invia l’ordine. Nessun pagamento online: confermiamo via messaggio e spediamo con corriere tracciato.</p>
+        <form id="orderForm">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            <input class="inp" name="name" placeholder="Nome e cognome" required />
+            <input class="inp" name="phone" placeholder="Telefono (WhatsApp)" required />
+          </div>
+          <input class="inp" name="email" placeholder="Email" type="email" required />
+          <input class="inp" name="address" placeholder="Indirizzo completo di spedizione" required />
+          <textarea class="inp" name="notes" placeholder="Note per il corriere / orari" rows="3"></textarea>
+          <label style="display:flex;gap:8px;align-items:center;margin:8px 0 14px"><input type="checkbox" required/> <span>Accetto termini e informativa privacy</span></label>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <button type="submit" class="btn buy">Invia ordine</button>
+            <a class="btn primary" id="whatsappBtn" href="#">Ordina su WhatsApp</a>
+          </div>
+        </form>
+        <p id="orderResult" class="policy" style="display:none;margin-top:10px;color:#9ff1bf"></p>
+      </div>
+      <div class="card pad">
+        <h2>Spedizione & garanzia</h2>
+        <ul class="policy">
+          <li><strong>Spedizione compresa</strong> in 24–72h con tracking.</li>
+          <li><strong>Resi</strong>: entro 14 giorni (prodotto integro).</li>
+          <li><strong>Garanzia</strong>: 24 mesi difetti di conformità.</li>
+          <li><strong>Assistenza</strong>: email/WhatsApp per configurazione e primo volo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section card pad">
+      <h2>Recensioni</h2>
+      <div class="feat">
+        <p class="policy" style="margin:0 0 4px"><strong>Nome stile: F180-B • Acquisto verificato</strong></p>
+        <p class="policy">Non pensavo che un drone in questa fascia di prezzo potesse offrire così tanto. È stabile, facile da controllare anche per chi è alle prime armi come me, e le funzioni automatiche (come il decollo e atterraggio con un tasto) rendono tutto molto intuitivo. La fotocamera 4K fa davvero un ottimo lavoro: immagini nitide e video fluidi, anche con un po’ di vento.<br><br>Molto comodo anche il sistema di evitamento ostacoli, che mi ha già salvato da qualche “crash”. Batteria nella media, ma più che sufficiente per divertirsi un bel po’. Nel complesso, un prodotto che supera le aspettative e dà proprio l’impressione di solidità e affidabilità. <strong>Consigliato</strong> sia per chi vuole iniziare sia per chi cerca un drone da usare in modo più serio senza spendere troppo.</p>
+      </div>
+    </section>
+
+    <section class="section card pad">
+      <h2>Domande frequenti</h2>
+      <details><summary>Serve patentino per volare?</summary><p class="policy">Verifica la normativa ENAC per peso/scenario. Evita aree vietate.</p></details>
+      <details><summary>È adatto ai principianti?</summary><p class="policy">Sì: modalità principiante, stabilizzazione e RTH.</p></details>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> John Tech • Offerta speciale 199€</p>
+      <p style="margin-top:6px">Contatti: <a href="mailto:voyagefone@gmail.com">voyagefone@gmail.com</a> • WhatsApp: <a href="#" id="whatsappNumber">+39 3514381099</a></p>
+    </footer>
+  </main>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    const form = document.getElementById('orderForm');
+    const res = document.getElementById('orderResult');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const lines = [
+        'Nuovo ordine Drone GPS 180',
+        '—',
+        'Nome: ' + data.get('name'),
+        'Telefono: ' + data.get('phone'),
+        'Email: ' + data.get('email'),
+        'Indirizzo: ' + data.get('address'),
+        'Note: ' + (data.get('notes')||'-')
+      ];
+      const subject = encodeURIComponent('Ordine Drone GPS 180 – 199€');
+      const body = encodeURIComponent(lines.join('\n'));
+      const to = 'voyagefone@gmail.com';
+      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+      res.style.display = 'block';
+      res.textContent = 'Se il client email non si è aperto, invia i dati a voyagefone@gmail.com o usa WhatsApp.';
+    });
+    const waBtn = document.getElementById('whatsappBtn');
+    const waNumEl = document.getElementById('whatsappNumber');
+    const waNumber = '+39 3514381099';
+    waNumEl.textContent = waNumber;
+    waNumEl.href = `https://wa.me/${waNumber.replace(/\D/g,'')}`;
+    waBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const data = new FormData(document.getElementById('orderForm'));
+      const t = [
+        'ORDINE Drone GPS 180 – 199€',
+        'Nome: ' + (data.get('name')||'-'),
+        'Telefono: ' + (data.get('phone')||'-'),
+        'Email: ' + (data.get('email')||'-'),
+        'Indirizzo: ' + (data.get('address')||'-'),
+        'Note: ' + (data.get('notes')||'-')
+      ].join('\n');
+      const url = `https://wa.me/${waNumber.replace(/\D/g,'')}?text=${encodeURIComponent(t)}`;
+      window.open(url, '_blank');
+    });
   </script>
 </body>
 </html>
