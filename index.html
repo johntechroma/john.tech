@@ -5,62 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Drone GPS 180 – Offerta Speciale 199€ spedizione compresa</title>
   <meta name="description" content="Drone GPS 180 con videocamera 4K, evitamento ostacoli, ritorno automatico e 23 minuti di autonomia. Offerta speciale 199€ spedizione compresa.">
-  <meta property="og:title" content="Drone GPS 180 – Offerta Speciale 199€" />
-  <meta property="og:description" content="Spedizione compresa. Guarda video, foto e ordina in un clic." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/titolo.jpg" />
   <link rel="icon" href="assets/favicon.png" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVR99C1Y4J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XVR99C1Y4J');
+  </script>
+
   <style>
     body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0f14;color:#e9f1fb}
+    header{background:#0b0f14cc;padding:10px 0;text-align:center;position:sticky;top:0;z-index:100;border-bottom:1px solid #1a2736}
     a{color:inherit;text-decoration:none}
-    .container{max-width:1150px;margin:auto;padding:20px}
-    header{background:#0b0f14cc;border-bottom:1px solid #1a2736;padding:10px 0;text-align:center;position:sticky;top:0;z-index:100}
+    .container{max-width:1100px;margin:auto;padding:20px}
     .btn{padding:12px 16px;border-radius:12px;border:none;cursor:pointer;font-weight:bold;display:inline-block}
     .buy{background:linear-gradient(135deg,#22c55e,#86efac);color:#03140a;}
-    .section{margin:30px 0}
-    .card{background:#111822;border:1px solid #1a2838;border-radius:20px;padding:20px}
+    .paypal{background:#111;border:1px solid #333;padding:8px 12px;border-radius:8px}
+    .section{margin:30px 0;background:#111822;border:1px solid #1a2838;border-radius:20px;padding:20px}
     footer{text-align:center;color:#7b92ac;font-size:13px;margin:40px 0 10px}
-    .btns{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-    .paypal-img{height:44px;border:none;vertical-align:middle}
+    .timer{background:linear-gradient(90deg,#ff4d4d,#ff914d);padding:10px;text-align:center;color:#000;font-weight:bold}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Drone GPS 180 – Offerta Speciale 199€</h1>
-  </header>
-
+  <div class="timer">🔥 Offerta valida ancora <span id="countdown">--:--:--</span> — Affrettati!</div>
+  <header><h1>Drone GPS 180 – Offerta Speciale 199€</h1></header>
   <main class="container">
-    <!-- HERO con pulsanti -->
-    <section class="section card">
-      <h2>Offerta lampo – 199€ spedizione compresa</h2>
-      <p>Acquista subito: puoi pagare <strong>con carta di credito</strong> o PayPal. Non serve un account PayPal.</p>
-      <div class="btns" style="margin-top:10px">
-        <a class="btn buy" href="https://wa.me/393514381099" target="_blank">Ordina su WhatsApp</a>
-        <a href="https://www.paypal.me/bellahorny75/199?currency=EUR" target="_blank" title="Paga ora 199€ con PayPal">
-          <img class="paypal-img" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Paga ora con PayPal">
+    <section class="section">
+      <h2>Offerta speciale 199€ spedizione compresa</h2>
+      <p>Drone GPS con Fotocamera 4K, Evitamento Ostacoli Automatico, Quadricottero Pieghévole. 23 Min Autonomia con Schermo Remoto 4,5".</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
+        <a class="btn buy" id="whatsappBtn" href="https://wa.me/393514381099" target="_blank">Ordina su WhatsApp</a>
+        <a class="paypal" id="paypalBtn" href="https://www.paypal.me/bellahorny75/199?currency=EUR" target="_blank">
+          <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Paga ora con PayPal" style="height:45px;border:none;">
         </a>
       </div>
     </section>
 
-    <!-- SEZIONE ORDINE (ripete i pulsanti) -->
-    <section class="section card">
-      <h2>Ordina ora – 199€</h2>
-      <p>Puoi acquistare direttamente online in modo sicuro con PayPal o carta di credito (non serve avere un account PayPal).</p>
-      <div class="btns" style="margin-top:10px">
-        <a class="btn buy" href="https://wa.me/393514381099" target="_blank">Ordina su WhatsApp</a>
-        <a href="https://www.paypal.me/bellahorny75/199?currency=EUR" target="_blank" title="Paga ora 199€ con PayPal">
-          <img class="paypal-img" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Paga ora con PayPal">
-        </a>
-      </div>
+    <section class="section">
+      <h2>Video dimostrativo</h2>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/gNcV0jNormc" frameborder="0" allowfullscreen></iframe>
     </section>
+
+    <section class="section">
+      <h2>Recensione</h2>
+      <p>“Non pensavo che un drone in questa fascia di prezzo potesse offrire così tanto...”</p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> John Tech • Offerta speciale 199€</p>
+      <p>Contatti: <a href="mailto:voyagefone@gmail.com">voyagefone@gmail.com</a></p>
+    </footer>
   </main>
-
-  <footer>
-    <p>© <span id="year"></span> John Tech • Offerta speciale 199€</p>
-  </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Countdown 7 giorni
+    (function(){
+      const key='jt_offer_deadline';let deadline=new Date(localStorage.getItem(key));
+      if(!deadline||isNaN(deadline)){deadline=new Date(Date.now()+7*24*60*60*1000);localStorage.setItem(key,deadline.toISOString());}
+      const el=document.getElementById('countdown');
+      function tick(){const d=deadline-new Date();if(d<=0){el.textContent='00:00:00';return;}
+        const h=Math.floor(d/3.6e6),m=Math.floor(d%3.6e6/6e4),s=Math.floor(d%6e4/1e3);
+        el.textContent=[h,m,s].map(n=>String(n).padStart(2,'0')).join(':');requestAnimationFrame(tick);}tick();
+    })();
+
+    // Event tracking
+    document.getElementById('paypalBtn').addEventListener('click',()=>gtag('event','click_paypal',{event_category:'engagement'}));
+    document.getElementById('whatsappBtn').addEventListener('click',()=>gtag('event','click_whatsapp',{event_category:'engagement'}));
   </script>
 </body>
 </html>
