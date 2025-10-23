@@ -1,81 +1,106 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Drone GPS 180 – Offerta Speciale 199€ spedizione compresa</title>
-  <meta name="description" content="Drone GPS 180 con videocamera 4K, evitamento ostacoli, ritorno automatico e 23 minuti di autonomia. Offerta speciale 199€ spedizione compresa.">
-  <link rel="icon" href="assets/favicon.png" />
-
-  <!-- Google tag (gtag.js) -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Splash – Drone F180 GPS</title>
+  <meta name="description" content="Drone F180 GPS: 4K, brushless, evitamento ostacoli. Entra per la pagina completa.">
+  <link rel="icon" href="assets/favicon.png">
+  <!-- GA -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVR99C1Y4J"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XVR99C1Y4J');
-  </script>
-
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XVR99C1Y4J');</script>
   <style>
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0f14;color:#e9f1fb}
-    header{background:#0b0f14cc;padding:10px 0;text-align:center;position:sticky;top:0;z-index:100;border-bottom:1px solid #1a2736}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:1100px;margin:auto;padding:20px}
-    .btn{padding:12px 16px;border-radius:12px;border:none;cursor:pointer;font-weight:bold;display:inline-block}
-    .buy{background:linear-gradient(135deg,#22c55e,#86efac);color:#03140a;}
-    .paypal{background:#111;border:1px solid #333;padding:8px 12px;border-radius:8px}
-    .section{margin:30px 0;background:#111822;border:1px solid #1a2838;border-radius:20px;padding:20px}
-    footer{text-align:center;color:#7b92ac;font-size:13px;margin:40px 0 10px}
-    .timer{background:linear-gradient(90deg,#ff4d4d,#ff914d);padding:10px;text-align:center;color:#000;font-weight:bold}
+    :root{--bg:#0b0f14;--card:#0f1722;--text:#e9f1fb;--muted:#a9bed6}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:radial-gradient(1200px 700px at 70% 20%,#122033,#0b0f14 60%);color:var(--text);font-family:system-ui,Segoe UI,Inter,Roboto,Helvetica,Arial,sans-serif}
+    .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:24px}
+    .card{width:min(1100px,96vw);background:linear-gradient(180deg,#0f1722,#0c121a);border:1px solid #1a2838;border-radius:24px;overflow:hidden;box-shadow:0 20px 80px rgba(0,0,0,.45)}
+    .grid{display:grid;grid-template-columns:1.1fr .9fr}
+    .left{position:relative;min-height:360px;background:#08121c}
+    .right{padding:28px 24px 24px}
+    h1{margin:0 0 8px;font-size:28px}
+    .price{display:flex;gap:12px;align-items:baseline;margin:10px 0 14px}
+    .now{font-size:36px;font-weight:900}
+    .muted{color:var(--muted);line-height:1.65}
+    .bullets{margin:12px 0;padding-left:18px;color:#c6daef;line-height:1.7}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{padding:12px 16px;border-radius:14px;border:1px solid #26384d;background:#122032;color:#e9f1fb;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+    .btn.primary{background:linear-gradient(135deg,#0ea5e9,#22d3ee);color:#05131e;border:none}
+    .gallery{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+    .thumb{width:120px;height:85px;border-radius:10px;border:1px solid #1a2a3d;background:#0b1622;object-fit:cover;cursor:pointer;transition:transform .15s ease}
+    .thumb:hover{transform:scale(1.03)}
+    /* Lightbox */
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:100}
+    .lightbox.open{display:flex}
+    .lightbox img{max-width:92vw;max-height:90vh;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.6)}
+    .close{position:absolute;top:18px;right:22px;background:#111;border:1px solid #333;border-radius:10px;color:#fff;padding:8px 12px;cursor:pointer}
+    @media(max-width:940px){.grid{grid-template-columns:1fr}.left{min-height:220px}}
   </style>
 </head>
 <body>
-  <div class="timer">🔥 Offerta valida ancora <span id="countdown">--:--:--</span> — Affrettati!</div>
-  <header><h1>Drone GPS 180 – Offerta Speciale 199€</h1></header>
-  <main class="container">
-    <section class="section">
-      <h2>Offerta speciale 199€ spedizione compresa</h2>
-      <p>Drone GPS con Fotocamera 4K, Evitamento Ostacoli Automatico, Quadricottero Pieghévole. 23 Min Autonomia con Schermo Remoto 4,5".</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
-        <a class="btn buy" id="whatsappBtn" href="https://wa.me/393514381099" target="_blank">Ordina su WhatsApp</a>
-        <a class="paypal" id="paypalBtn" href="https://www.paypal.me/bellahorny75/199?currency=EUR" target="_blank">
-          <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Paga ora con PayPal" style="height:45px;border:none;">
-        </a>
+  <div class="wrap">
+    <div class="card">
+      <div class="grid">
+        <div class="left">
+          <img src="assets/thumb1.jpg" alt="Cover" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'">
+        </div>
+        <div class="right">
+          <h1>Drone F180 GPS</h1>
+          <div class="price"><div class="now">199€</div><div class="muted">4K • GPS • Brushless • Ostacoli 360°</div></div>
+          <p class="muted">DRONE F180 GPS Drone con Camera 4K, Motore Brushless, Evitamento Ostacoli Automatico, Decollo/Atterraggio 1 Tasto, Volo Traiettoria, Posizionamento Ottico, per Adulti, Bambini e Principianti.</p>
+          <h3 style="margin:10px 0 6px">Caratteristiche</h3>
+          <ul class="bullets">
+            <li>Tripla evitazione ostacoli con hovering stabile.</li>
+            <li>Fotocamera 4K con FPV su schermo 4,5".</li>
+            <li>Pieghevole & portatile, <250g.</li>
+            <li>Modalità intelligenti: decollo 1‑tasto, traiettoria, gesture.</li>
+            <li>Motori brushless per volo stabile e silenzioso.</li>
+          </ul>
+
+          <div class="gallery">
+            <img class="thumb" src="assets/thumb1.jpg" data-full="assets/thumb1.jpg" alt="foto 1">
+            <img class="thumb" src="assets/thumb2.jpg" data-full="assets/thumb2.jpg" alt="foto 2">
+            <img class="thumb" src="assets/thumb3.jpg" data-full="assets/thumb3.jpg" alt="foto 3">
+            <img class="thumb" src="assets/thumb4.jpg" data-full="assets/thumb4.jpg" alt="foto 4">
+            <img class="thumb" src="assets/thumb5.jpg" data-full="assets/thumb5.jpg" alt="foto 5">
+            <img class="thumb" src="assets/thumb6.jpg" data-full="assets/thumb6.jpg" alt="foto 6">
+          </div>
+
+          <div class="cta">
+            <a class="btn primary" href="main.html" id="enterBtn">Entra nel sito</a>
+            <a class="btn" href="https://wa.me/393514381099" target="_blank">WhatsApp</a>
+          </div>
+        </div>
       </div>
-    </section>
+      <div style="padding:12px 20px;color:#8aa3bf;font-size:12px;border-top:1px solid #1a2836">© <span id="year"></span> John Tech • Video: <a href="https://youtu.be/gNcV0jNormc" target="_blank" style="color:#a3d2ff">YouTube</a></div>
+    </div>
+  </div>
 
-    <section class="section">
-      <h2>Video dimostrativo</h2>
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/gNcV0jNormc" frameborder="0" allowfullscreen></iframe>
-    </section>
-
-    <section class="section">
-      <h2>Recensione</h2>
-      <p>“Non pensavo che un drone in questa fascia di prezzo potesse offrire così tanto...”</p>
-    </section>
-
-    <footer>
-      <p>© <span id="year"></span> John Tech • Offerta speciale 199€</p>
-      <p>Contatti: <a href="mailto:voyagefone@gmail.com">voyagefone@gmail.com</a></p>
-    </footer>
-  </main>
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="close" id="closeLb">Chiudi ✕</button>
+    <img id="lbImg" src="" alt="anteprima">
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    // GA event for Enter
+    document.getElementById('enterBtn').addEventListener('click', function(){ if(window.gtag) gtag('event','click_enter_splash',{event_category:'engagement'}); });
 
-    // Countdown 7 giorni
-    (function(){
-      const key='jt_offer_deadline';let deadline=new Date(localStorage.getItem(key));
-      if(!deadline||isNaN(deadline)){deadline=new Date(Date.now()+7*24*60*60*1000);localStorage.setItem(key,deadline.toISOString());}
-      const el=document.getElementById('countdown');
-      function tick(){const d=deadline-new Date();if(d<=0){el.textContent='00:00:00';return;}
-        const h=Math.floor(d/3.6e6),m=Math.floor(d%3.6e6/6e4),s=Math.floor(d%6e4/1e3);
-        el.textContent=[h,m,s].map(n=>String(n).padStart(2,'0')).join(':');requestAnimationFrame(tick);}tick();
-    })();
-
-    // Event tracking
-    document.getElementById('paypalBtn').addEventListener('click',()=>gtag('event','click_paypal',{event_category:'engagement'}));
-    document.getElementById('whatsappBtn').addEventListener('click',()=>gtag('event','click_whatsapp',{event_category:'engagement'}));
+    // Lightbox logic
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lbImg');
+    document.querySelectorAll('.thumb').forEach(img => {
+      img.addEventListener('click', () => {
+        lbImg.src = img.dataset.full;
+        lb.classList.add('open');
+        if(window.gtag) gtag('event','open_lightbox',{event_category:'engagement', value: img.dataset.full});
+      });
+    });
+    document.getElementById('closeLb').addEventListener('click', () => lb.classList.remove('open'));
+    lb.addEventListener('click', (e) => { if(e.target === lb) lb.classList.remove('open'); });
+    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') lb.classList.remove('open'); });
   </script>
 </body>
 </html>
