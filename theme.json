@@ -1,0 +1,102 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.5/theme.json",
+  "version": 2,
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif",
+          "slug": "system-ui",
+          "name": "System UI"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "sm",
+          "size": "14px",
+          "name": "SM"
+        },
+        {
+          "slug": "base",
+          "size": "16px",
+          "name": "Base"
+        },
+        {
+          "slug": "lg",
+          "size": "20px",
+          "name": "LG"
+        },
+        {
+          "slug": "xl",
+          "size": "28px",
+          "name": "XL"
+        },
+        {
+          "slug": "2xl",
+          "size": "40px",
+          "name": "2XL"
+        }
+      ]
+    },
+    "color": {
+      "palette": [
+        {
+          "slug": "brand-blue",
+          "name": "Brand Blue",
+          "color": "#1F63B5"
+        },
+        {
+          "slug": "brand-red",
+          "name": "Brand Red",
+          "color": "#D03535"
+        },
+        {
+          "slug": "text",
+          "name": "Text",
+          "color": "#1F2937"
+        },
+        {
+          "slug": "bg",
+          "name": "Background",
+          "color": "#ffffff"
+        }
+      ]
+    },
+    "spacing": {
+      "units": [
+        "rem",
+        "em",
+        "px",
+        "%",
+        "vh",
+        "vw"
+      ]
+    },
+    "custom": {
+      "brand": {
+        "defaultLanguage": "it"
+      }
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--system-ui)"
+    },
+    "color": {
+      "background": "var(--wp--preset--color--bg)",
+      "text": "var(--wp--preset--color--text)"
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
+  ]
+}
