@@ -1,8 +1,10 @@
-# Innovativa Splash (Patched)
-Patch: 1) rimosso attributo "theme" dai template-part, 2) logo con `get_theme_file_uri('assets/logo.png')`.
-Include pattern bilingue (Home, Cosa Facciamo, Lavora con Noi, News, About, Contatti).
+# Drone F180 4K GPS – Static Site (GitHub Pages)
+Bilingual static product site (IT default).
 
-## Installazione
-1. WordPress → Aspetto → Temi → Aggiungi nuovo → Carica tema (carica lo ZIP).
-2. Attiva il tema. Impostazioni → Lettura → Homepage statica → Front Page.
-3. Crea le pagine e inserisci i Pattern da “Innovativa Splash (Patched)”.
+## Deploy
+1. Create a new GitHub repo and upload everything (keep `.nojekyll`).
+2. Settings → Pages → Deploy from branch: `main`, Folder `/ (root)`.
+3. Open: https://<user>.github.io/<repo>/
+
+## Replace photos
+- Put your images into `assets/photos/` and keep names `photo1.jpg`..`photo6.jpg` (or edit HTML).
